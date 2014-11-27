@@ -70,22 +70,24 @@ public class Main {
                     p = p*n1;
             	    n2--;
                     }
-            	    JOptionPane.showMessageDialog(null,"La potencia es:"+p);
+            	    JOptionPane.showMessageDialog(null,"La Potencia es:"+p);
             	    break;
             	
             	case 7:
-            	
+            	    n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero"));
+            	    n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese base"));
+            	    l = Math.log10(n1)/ Math.log10(n2);
+            	    JOptionPane.showMessageDialog(null,"El Logaritmo es:"+l);
+            	    break;
+
+            	case 8:
             	    n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero"));
                     while(n1!=0){
             	    f=f*n1;
             	    n1--;
             	    }
-            	    JOptionPane.showMessageDialog(null,"El logaritmo es:"+f);
+            	    JOptionPane.showMessageDialog(null,"El Factor es:"+f);
             	    break;
-            	
-
-		
-                    
             	
             }
 	  }while(op!=9);
