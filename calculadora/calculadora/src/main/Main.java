@@ -57,21 +57,32 @@ public class Main {
                     break;
                     
                 case 5:
-            		n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero"));
-            		n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese radical"));
-            		ra = Math.pow(n1,1/n2);
-            		JOptionPane.showMessageDialog(null,"El radical es:"+ra);
-            		break; 
+            	    n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero"));
+            	    n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese radical"));
+            	    ra = Math.pow(n1,1/n2);
+            	    JOptionPane.showMessageDialog(null,"El radical es:"+ra);
+            	    break; 
             		
             	case 6:
-            	     	n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese base "));
-            		n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese exponente "));
-            		while (0<n2){
-            		p = p*n1;
-            		n2--;
-            		}
-            		JOptionPane.showMessageDialog(null,"La potencia es:"+p);
-            		break;
+            	    n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese base "));
+            	    n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese exponente "));
+            	    while (0<n2){
+                    p = p*n1;
+            	    n2--;
+                    }
+            	    JOptionPane.showMessageDialog(null,"La potencia es:"+p);
+            	    break;
+            	
+            	case 7:
+            	
+            	    n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero"));
+                    while(n1!=0){
+            	    f=f*n1;
+            	    n1--;
+            	    }
+            	    JOptionPane.showMessageDialog(null,"El logaritmo es:"+f);
+            	    break;
+            	
 
 		
                     
