@@ -44,9 +44,13 @@ public class Main {
                     m=n1*n2;
                     JOptionPane.showMessageDialog(null,"La multiplicacion es:"+m);
                     break;
-            	
-            	
-            	
+                
+                case 4:
+                    n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 1"));
+                    n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 2"));
+                    d=n1/n2;
+                    JOptionPane.showMessageDialog(null,"La division es:"+d);
+                    break;
             	
             }
 	  }while(op!=5);
