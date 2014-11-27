@@ -10,7 +10,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Primer ensayo");
-
+		System.out.println("Segundo ensayo");
 	}
 
 }
