@@ -11,7 +11,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 	int op=0;
-        double n1,n2,s,m,d,r;
+        double n1,n2,s,m,d,r,ra,p=1,l,f=1;
         do{
             op=Integer.parseInt(JOptionPane.showInputDialog("\nCalculadora\n"+
             "************************\n"+
@@ -19,7 +19,11 @@ public class Main {
             "[2] RESTAR\n"+
             "[3] MULTIPLICAR\n"+
             "[4] DIVIDIR\n"+
-            "[5] SALIR\n"+
+            "[5] RADICACION\n"+
+            "[6] POTENCIA\n"+
+            "[7] LOGARITMO\n"+
+            "[8] FACTORIAL\n"+
+            "[9] SALIR\n"+
             "Ingresa una opcion:\n\n"));
 
             switch(op)
@@ -51,10 +55,17 @@ public class Main {
                     d=n1/n2;
                     JOptionPane.showMessageDialog(null,"La division es:"+d);
                     break;
-                    /// fdsftysxli6az
+                    
+                case 5:
+            		n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero"));
+            		n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese radical"));
+            		ra = Math.pow(n1,1/n2);
+            		JOptionPane.showMessageDialog(null,"El radical es:"+ra);
+            		break;    
+                    
             	
             }
-	  }while(op!=5);
+	  }while(op!=9);
 	}
 
 }
