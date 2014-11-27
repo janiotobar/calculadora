@@ -61,7 +61,19 @@ public class Main {
             		n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese radical"));
             		ra = Math.pow(n1,1/n2);
             		JOptionPane.showMessageDialog(null,"El radical es:"+ra);
-            		break;    
+            		break; 
+            		
+            	case 6:
+            	     	n1=Double.parseDouble(JOptionPane.showInputDialog("Ingrese base "));
+            		n2=Double.parseDouble(JOptionPane.showInputDialog("Ingrese exponente "));
+            		while (0<n2){
+            		p = p*n1;
+            		n2--;
+            		}
+            		JOptionPane.showMessageDialog(null,"La potencia es:"+p);
+            		break;
+
+		
                     
             	
             }
